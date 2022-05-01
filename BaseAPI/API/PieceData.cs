@@ -16,7 +16,7 @@ namespace BaseAPI.API
 
 
         /// <param name="piece">Piece Prefab</param>
-        /// <param name="filePath">Path to AssetBundle</param>
+        /// <param name="gameObject">Path to AssetBundle</param>
         public PieceData(Piece piece, GameObject gameObject) : this(piece, gameObject, Int3.zero)
         {}
         /// <param name="extraCells">Each Cell takes up a 5m by 3.5m by 5m space define more cells if needed</param>
@@ -24,7 +24,7 @@ namespace BaseAPI.API
         {}
 
         /// <param name="piece">Piece Prefab</param>
-        /// <param name="filePath">Path to AssetBundle</param>
+        /// <param name="gameObject">Path to AssetBundle</param>
         /// <param name="extraCells">Each Cell takes up a 5m by 3.5m by 5m space define more cells if needed</param>
         /// <param name="isCorridor">If this piece is a corridor define it here</param>
         public PieceData(Piece piece, GameObject gameObject, Int3 extraCells, bool isCorridor)
